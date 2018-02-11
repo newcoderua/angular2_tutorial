@@ -6,14 +6,16 @@ import { HttpModule } from '@angular/http';
 import {CommonModule} from '@angular/common';
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/user.component';
+import { AboutComponent } from './components/about.component';
+import { routing } from './app.routing';
 
 
 @NgModule({
   declarations: [
-    AppComponent, UserComponent
+    AppComponent, UserComponent, AboutComponent
   ],
   imports: [
-    BrowserModule, CommonModule, FormsModule, HttpModule
+    BrowserModule, CommonModule, FormsModule, HttpModule, routing
   ],
   providers: [],
   bootstrap: [AppComponent]
